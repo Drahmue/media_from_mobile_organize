@@ -20,7 +20,7 @@ zeitliche Reihenfolge (`YYYYMMDD_HHMMSS[a|b|c].ext`).
 
 ## Coding-Konventionen (immer einhalten)
 
-- **Kein `print()`** — stets `screen_and_log(message)` verwenden
+- **Coding-Standard:** `C:\Users\ah\Dropbox\ClaudeWork\_templates\python_standard.md` (ahlib-API: `create_extended_logger`, `StructuredConfigParser`)
 - **Konfiguration** immer aus INI-Datei lesen (`configparser`)
 - **Log-Datei** immer anlegen (`logging.basicConfig`, UTF-8)
 - **Hauptprogramm** nur aus Funktionsaufrufen (`main()` ruft Funktionen auf)

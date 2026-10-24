@@ -14,9 +14,15 @@
     in die EXIF-Daten schreiben
   - Dropbox-Metadaten auslesen, um Autor zu identifizieren
 
-### iPhone MOV — Zeitoffset
-- [ ] Beobachten, ob der Zeitoffset (+2 h, Stand 2026-08-01) sich mit der Sommerzeit
-  auf +1 h reduziert. Aktuell gilt: `Time_Shift = +2` für EH-MOV-Dateien eintragen.
+### iPhone MOV — Zeitoffset automatisch umrechnen (2026-10-11)
+- [ ] ExifTool die Zeit von MOV-Dateien selbst umrechnen lassen (`-api QuickTimeUTC`),
+  statt `Time_Shift` von Hand einzutragen. Hintergrund: QuickTime speichert `CreateDate`
+  in UTC. Daraus folgt Sommerzeit +2 h, Winterzeit +1 h (passt zu den Beobachtungen
+  2026-04-05 mit +1 h und 2026-08-01 mit +2 h, sofern die April-Videos noch aus der
+  Winterzeit stammten). Umsetzung in `mfmo_1_analyze.py` (und `mfmo.py`): Option nur für
+  `.mov`/`.mp4` setzen, vorher an einem EH-Video aus Sommer- und Winterzeit gegen ein
+  gleichzeitiges HEIC/JPG prüfen. Danach `Time_Shift` nur noch für Reisen/Zeitzonen.
+  Bis dahin gilt: `Time_Shift = +2` (Sommerzeit) für EH-MOV-Dateien.
 
 ### Metadaten schreiben
 - [ ] Entscheiden, ob EXIF-Metadaten (Artist, Kameramodell) nach der Umbenennung

@@ -79,7 +79,7 @@ python mfmo_3_execute.py   # → Dateien umbenennen
 - Erstellt `<ordnername>_analyse.xlsx` mit fixierter Kopfzeile und Tabellenformat
 
 **Manuelle Bearbeitung danach:**
-- `Time_Shift` eintragen (Stunden-Offset, z. B. `+1` für iPhone-MOV im Sommer)
+- `Time_Shift` eintragen (Stunden-Offset, z. B. `+2` für iPhone-MOV im Sommer)
 - `Ziel_Name` korrigieren, falls kein Datum erkennbar war
 - `Artist` ergänzen, falls leer
 
@@ -106,7 +106,7 @@ python mfmo_3_execute.py   # → Dateien umbenennen
 | Samsung JPG     | Dateiname und EXIF-Datum zuverlässig                       |
 | Samsung MP4     | EXIF-Datum abweichend, kein Kameramodell-Eintrag           |
 | Apple HEIC      | EXIF vollständig                                           |
-| Apple MOV       | Zeitstempel weicht ab: +1 h (Sommerzeit), +2 h (Winter)   |
+| Apple MOV       | Zeitstempel in UTC: +2 h (Sommerzeit), +1 h (Winter)      |
 
 ## Log-Dateien
 

@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+### Dokumentation
+- 2026-10-24: Doku: Übernahme aus Claude-Memory (claude_setup CS-019) – CLAUDE.md: veraltete ahlib-API (`screen_and_log`) durch Verweis auf `ClaudeWork\_templates\python_standard.md` ersetzt
+
+## [2026-10-11]
+
+### Dokumentation
+- README: Zeitkorrektur Apple MOV korrigiert (war vertauscht). QuickTime speichert UTC,
+  daher Sommerzeit +2 h, Winterzeit +1 h.
+- TODO: automatische Umrechnung per ExifTool (`-api QuickTimeUTC`) aufgenommen.
+
 ## [2026-04-05]
 
 ### Erkenntnisse
