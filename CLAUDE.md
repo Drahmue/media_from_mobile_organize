@@ -75,7 +75,7 @@ Artist-Keys werden **lowercase** verglichen (`.strip().lower()`).
 | Gerät/Format     | Problem                                                              |
 |------------------|----------------------------------------------------------------------|
 | Samsung MP4      | EXIF-Datum abweichend / unzuverlässig; kein Kameramodell-Eintrag    |
-| iPhone MOV       | Zeitstempel weicht von JPG/HEIC ab: +1h (Sommerzeit), +2h (Winter)  |
+| iPhone MOV       | Zeitstempel in UTC (QuickTime): +2h (Sommerzeit), +1h (Winter)      |
 | Samsung JPG/MP4  | Dateiname enthält verlässlich Datum (`YYYYMMDD_HHMMSS`)             |
 
 ## Workflow (mfmo.py)

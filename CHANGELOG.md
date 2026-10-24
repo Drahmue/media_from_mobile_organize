@@ -4,6 +4,7 @@
 
 ### Dokumentation
 - 2026-10-24: Doku: Übernahme aus Claude-Memory (claude_setup CS-019) – CLAUDE.md: veraltete ahlib-API (`screen_and_log`) durch Verweis auf `ClaudeWork\_templates\python_standard.md` ersetzt
+- 2026-10-24: CLAUDE.md: iPhone-MOV-Zeitoffset korrigiert (UTC, Sommerzeit +2 h, Winterzeit +1 h), analog README
 
 ## [2026-10-11]
 
